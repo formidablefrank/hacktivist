@@ -15,5 +15,10 @@ class Ngo extends CI_Model{
   function get($ngoid){
     return $this->db->get_where('ngos', array('ngo_id', $ngoid));
   }
+
+	function get_events($ngoid){
+		return $query = $this->db->query("SELECT * 
+		FROM ngos NATURAL JOIN events WHERE ngo_id = $ngoid");
+	}
 }
 ?>

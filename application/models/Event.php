@@ -5,6 +5,10 @@ class Event extends CI_Model{
     parent::__construct();
   }
 
+  function getAll(){
+    return $this->db->get('events');
+  }
+
   function create($name, $desc, $categoryid, $ngoid, $tokens, $start, $end, $address, $lat, $lon, $limit, $statusid){
     return $this->db->insert('events',
       array('event_name' => $name,
@@ -38,6 +42,17 @@ class Event extends CI_Model{
         'event_milestone' => $milestone),
       array('event_id' => $eventid));
   }
+
+  function get($eventid){
+    return return $this->db->get_where('events', array('event_id' => $eventid), 1);
+  }
+
+  function getAll(){
+    return $query = $this->db->query("SELECT * 
+      FROM events NATURAL JOIN ngos NATURAL JOIN categories
+      NATURAL JOIN statuses");
+  }
+
 }
 
 ?>
