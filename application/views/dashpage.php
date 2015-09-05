@@ -55,7 +55,7 @@
 			<div class="ui segment">
 				<div class="ui green ribbon label">Featured Events</div>
 				<div class="ui divided items">
-					<?php foreach ($userevents as $event) { ?>
+					<?php foreach ($userevents as $event) { if($event->status_id == 1){?>
 					<div class="item">
 						<div class="image">
 							<img src="img/forever.png" alt="Image">
@@ -80,14 +80,14 @@
 							</div>
 						</div>
 					</div>
-					<?php } ?>
+					<?php }} ?>
 				</div>
 			</div>
 		<!--Past Events-->
 			<div class="ui segment">
 				<div class="ui green ribbon label">Upcoming Events You Joined</div>
 				<div class="ui divided items">
-					<?php foreach ($userevents as $event) { ?>
+					<?php foreach ($userevents as $event) { if($event->status_id == 2){ ?>
 					<div class="item">
 						<div class="image">
 							<img src="img/forever.png" alt="Image">
@@ -112,14 +112,14 @@
 							</div>
 						</div>
 					</div>
-					<?php } ?>
+					<?php }} ?>
 				</div>
 			</div>
 			<!--Recent Past Events-->
 			<div class="ui segment">
 				<div class="ui green ribbon label">Recent Events</div>
 				<div class="ui divided items">
-					<?php foreach ($userevents as $event) { ?>
+					<?php foreach ($userevents as $event) { if($event->status_id == 3){?>
 					<div class="item">
 						<div class="image">
 							<img src="img/forever.png" alt="Image">
@@ -144,7 +144,7 @@
 							</div>
 						</div>
 					</div>
-					<?php } ?>
+					<?php }} ?>
 				</div>
 			</div>
 
