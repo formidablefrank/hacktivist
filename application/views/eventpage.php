@@ -37,17 +37,60 @@
 							</div>
 						</div>
 					</div>
+					<!--Milestones-->
+					<br><div class="ui horizontal divider">Milestones</div><br>
+					<div class="ui centered grid container">
+						<div class="ui statistics">
+							<div class="statistic">
+								<div class="value">22</div>
+								<div class="label">Saves</div>
+							</div>
+							<div class="statistic">
+								<div class="text value">Three <br>Hundred</div>
+								<div class="label">Signups</div>
+							</div>
+							<div class="statistic">
+								<div class="value">
+									<i class="computer icon"></i>3
+								</div>
+								<div class="label">
+									Bootcamps
+								</div>
+							</div>
+							<div class="statistic">
+								<div class="value">
+									<i class="users icon"></i> 42
+								</div>
+								<div class="label">Team Members</div>
+							</div>
+						</div>
+					</div>
+					<br><div class="ui horizontal divider">Photos</div><br>
+					<div class="ui grid">
+						<div class="four wide computer column">
+							<a class="ui circular medium image" href="">
+								<img src="<?php echo base_url('img/forever.png') ?>" alt="">
+							</a>
+						</div>
+						<div class="four wide computer column">
+							<a class="ui circular medium image" href="">
+								<img src="<?php echo base_url('img/forever.png') ?>" alt="">
+							</a>
+						</div>
+						<div class="four wide computer column">
+							<a class="ui circular medium image" href="">
+								<img src="<?php echo base_url('img/forever.png') ?>" alt="">
+							</a>
+						</div>
+						<div class="four wide computer column">
+							<a class="ui circular medium image" href="">
+								<img src="<?php echo base_url('img/forever.png') ?>" alt="">
+							</a>
+						</div>
+						<div class="ui right floated button">View more photos</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-
-
-Milestones
-
-
-Pictures
-
-
-whatever
