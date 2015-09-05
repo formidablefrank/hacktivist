@@ -6,10 +6,12 @@
 					<div class="ui basic form segment">
 						<h3>Login as an Organization</h3>
 
-						<div class="ui input field">
+						<div class="ui left icon input field">
+							<i class="user icon"></i>
 							<input type="text" placeholder="Username or Email" required>
 						</div>
-						<div class="ui input field">
+						<div class="ui left icon input field">
+							<i class="lock icon"></i>
 							<input type="password" placeholder="Password" required>
 						</div>
 						<button class="ui large right floated submit icon labeled button">

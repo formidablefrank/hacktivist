@@ -3,10 +3,12 @@
 		<div class="ui form segment">
 			<h3>Register your Organization</h3>
 
-			<div class="ui input field">
+			<div class="ui left icon input field">
+				<i class="user icon"></i>
 				<input type="text" placeholder="Username or Email" required>
 			</div>
-			<div class="ui input field">
+			<div class="ui left icon input field">
+				<i class="lock icon"></i>
 				<input type="password" placeholder="Password" required>
 			</div>
 			<div class="ui right aligned container">
