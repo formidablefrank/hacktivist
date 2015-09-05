@@ -52,6 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'home';
 $route['dash'] = 'home/dash';
 $route['login'] = 'home/login';
+$route['create'] = 'home/create';
 $route['register'] = 'home/register';
 $route['event/(:any)'] = 'home/event/$1';
 $route['join/(:any)/(:any)'] = 'home/join/$1/$2';
