@@ -84,7 +84,7 @@ class Home extends CI_Controller {
 		$this->load->view('templates/footer', $data);
 	}
 
-	public function join($userid, $eventid){
+	public function join($user_id, $event_id){
 		$data['title'] = 'Leaflet | View Event';
 		// $this->eventuser->create($userid, $eventid, 1);
 		$this->load->view('templates/header', $data);
@@ -108,8 +108,17 @@ class Home extends CI_Controller {
 		$data['title'] = 'Map';
 		$data['events'] = $this->result_table($this->event->getAll());
     $this->load->view('templates/header', $data);
+     $this->load->view('templates/main-nav', $data);
 		$this->load->view('mapview', $data);
     $this->load->view('templates/footer', $data);
+	}
+
+	public function leaderboard(){
+		$data['title'] = 'Leaderboard';
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/main-nav', $data);
+		$this->load->view('leaderpage', $data);
+		$this->load->view('templates/footer', $data);
 	}
 
 	function result_table($query){

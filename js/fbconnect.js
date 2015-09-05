@@ -6,19 +6,6 @@ window.fbAsyncInit = function() {
     version    : 'v2.2',
     status     : true
   });
-  FB.getLoginStatus(function(response) {
-    if (response.status === 'connected') {
-      console.log('Logged in.');
-    }
-    else {
-      FB.login();
-    }
-  });
-  FB.login(function(){
-  // Note: The call will only work if you accept the permission request
-  //share something
-    FB.api('/me/feed', 'post', {message: 'Hello, world!'});
-  }, {scope: 'publish_actions'});
 };
 
 (function(d, s, id){

@@ -1,11 +1,14 @@
 <section id-"eventpage">
 	<div class="ui centered grid container">
+	
 		<div class="fourteen wide column">
 			<div class="ui segment">
 				<div class="ui items">
 					<div class="item">
-						<div class="ui medium image">
-							<img src="<?php echo base_url('img/forever.png') ?>" alt="Main photo">
+						<div class="ui container">
+							<div class="ui fluid image">
+								<img src="<?php echo $event->event_pic ?>" alt="Main photo">
+							</div>
 						</div>
 						<div class="content">
 							<div class="header">
@@ -34,6 +37,13 @@
 								class="ui right floated button">
 									Join the Event
 								</a>
+								<br/><br/>
+								<div
+								    class="fb-like"
+								    data-send="true"
+								    data-width="450"
+								    data-show-faces="true">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -68,23 +78,23 @@
 					<br><div class="ui horizontal divider">Photos</div><br>
 					<div class="ui grid">
 						<div class="four wide computer column">
-							<a class="ui circular medium image" href="">
-								<img src="<?php echo base_url('img/forever.png') ?>" alt="">
+							<a class="ui medium image" href="">
+								<img src="<?php echo $event->event_pic ?> " alt="">
 							</a>
 						</div>
 						<div class="four wide computer column">
-							<a class="ui circular medium image" href="">
-								<img src="<?php echo base_url('img/forever.png') ?>" alt="">
+							<a class="ui medium image" href="">
+								<img src="<?php echo $event->event_pic ?> " alt="">
 							</a>
 						</div>
 						<div class="four wide computer column">
-							<a class="ui circular medium image" href="">
-								<img src="<?php echo base_url('img/forever.png') ?>" alt="">
+							<a class="ui medium image" href="">
+								<img src="<?php echo $event->event_pic ?>" alt="">
 							</a>
 						</div>
 						<div class="four wide computer column">
-							<a class="ui circular medium image" href="">
-								<img src="<?php echo base_url('img/forever.png') ?>" alt="">
+							<a class="ui medium image" href="">
+								<img src="<?php echo $event->event_pic ?> " alt="">
 							</a>
 						</div>
 						<div class="ui right floated button">View more photos</div>

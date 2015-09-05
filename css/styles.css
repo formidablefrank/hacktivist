@@ -25,6 +25,17 @@ body {
 	background: #E1FF9B;
 }
 
+#main-particle-canvas {
+	background: rgba(255,255,255,0.87);
+	/*background: linear-gradient(to bottom, #A1D55B, #E1FF9B);*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -50;
+}
+
 /* section wrapper styles */
 
 section {
@@ -149,4 +160,21 @@ img {
 
 img:hover {
 	opacity: 1;
+}
+
+.ui.label {
+	background-color: #A1D55F !important;
+	color: #EFEFEF;
+}
+
+a.header{
+	color: #222222 !important;
+}
+
+a.header:hover {
+	color: #A1E55D !important;
+}
+
+.ui.button {
+	color: #222222;
 }

@@ -6,7 +6,7 @@
 					<div class="left floated mini ui image">
 						<img src="<?php echo base_url('img/forever.png') ?>" alt="">
 					</div>
-					<div class="header">User</div>
+					<div class="header">Marian</div>
 					<div class="meta">Volunteer</div>
 					<div class="description">
 						<div class="ui label">
@@ -30,7 +30,7 @@
 					<img src="<?php echo base_url('img/forever.png') ?>" alt="">
 				</div>
 				<div class="content">
-					<div class="header">User</div>
+					<div class="header">Marian</div>
 					<div class="meta">
 						Volunteer
 					</div>
@@ -53,16 +53,16 @@
 		<div class="fourteen wide mobile ten wide tablet ten wide computer column">
 			<!--Featured Events-->
 			<div class="ui segment">
-				<div class="ui blue ribbon label">Featured Events</div>
+				<div class="ui green ribbon label">Featured Events</div>
 				<div class="ui divided items">
 					<?php foreach ($userevents as $event) { if($event->status_id == 1){?>
 					<div class="item">
 						<div class="image">
-							<img src="img/forever.png" alt="Image">
+							<img src="<?php echo $event->event_pic ?>" alt="Image">
 						</div>
 						<div class="content">
 							<a href="<?php echo base_url('event/'.$event->event_id) ?>" class="header">
-								<?php echo $event->event_name; ?>
+								<?php echo $event->event_name; ?> class="ui header"
 							</a>
 							<div class="meta"><?php echo $event->ngo_name; ?></div>
 							<div class="description">
@@ -85,16 +85,16 @@
 			</div>
 		<!--Past Events-->
 			<div class="ui segment">
-				<div class="ui blue ribbon label">Upcoming Events You Joined</div>
+				<div class="ui green ribbon label">Upcoming Events You Joined</div>
 				<div class="ui divided items">
 					<?php foreach ($userevents as $event) { if($event->status_id == 2){ ?>
 					<div class="item">
 						<div class="image">
-							<img src="img/forever.png" alt="Image">
+							<img src="<?php echo $event->event_pic ?>" alt="Image">
 						</div>
 						<div class="content">
 							<a href="<?php echo base_url('event/'.$event->event_id) ?>" class="header">
-								<?php echo $event->event_name; ?>
+								<?php echo $event->event_name; ?> class="ui header"
 							</a>
 							<div class="meta"><?php echo $event->ngo_name; ?></div>
 							<div class="description">
@@ -117,16 +117,16 @@
 			</div>
 			<!--Recent Past Events-->
 			<div class="ui segment">
-				<div class="ui blue ribbon label">Recent Events</div>
+				<div class="ui green ribbon label">Recent Events</div>
 				<div class="ui divided items">
 					<?php foreach ($userevents as $event) { if($event->status_id == 3){?>
 					<div class="item">
 						<div class="image">
-							<img src="img/forever.png" alt="Image">
+							<img src="<?php echo $event->event_pic ?>" alt="Image">
 						</div>
 						<div class="content">
 							<a href="<?php echo base_url('event/'.$event->event_id) ?>" class="header">
-								<?php echo $event->event_name; ?>
+								<?php echo $event->event_name; ?> class="ui header"
 							</a>
 							<div class="meta"><?php echo $event->ngo_name; ?></div>
 							<div class="description">

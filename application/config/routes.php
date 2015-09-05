@@ -54,6 +54,7 @@ $route['dash'] = 'home/dash';
 $route['login'] = 'home/login';
 $route['create'] = 'home/create';
 $route['register'] = 'home/register';
+$route['leaderboard'] = 'home/leaderboard';
 $route['event/(:any)'] = 'home/event/$1';
 $route['join/(:any)/(:any)'] = 'home/join/$1/$2';
 $route['events'] = 'home/events';
