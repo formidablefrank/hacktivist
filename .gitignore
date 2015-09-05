@@ -1,5 +1,0 @@
-*.log
-*~
-*#
-application/config/config.php
-/.htaccess
