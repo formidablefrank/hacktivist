@@ -1,6 +1,6 @@
 <div id="main-nav">
 	<div class="ui secondary menu container">
-		<a href="" class="header item">
+		<a href="<?php echo base_url('') ?>" class="header item">
 			<img src="<?php echo base_url('img/logo-black.svg'); ?>" alt="app logo">
 		</a>
 		<a href="<?php echo base_url('dash') ?>" class="item">
