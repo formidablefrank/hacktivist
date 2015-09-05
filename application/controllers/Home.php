@@ -39,6 +39,7 @@ class Home extends CI_Controller {
   {
 		$data['title'] = 'Login!';
 		$this->load->view('templates/header', $data);
+		$this->load->view('templates/main-nav', $data);
 		$this->load->view('registerpage', $data);
 		$this->load->view('templates/footer', $data);
 	}
