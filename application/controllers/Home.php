@@ -47,7 +47,7 @@ class Home extends CI_Controller {
   public function dash()
   {
 		$data['title'] = 'Dash!';
-		$data['userevents'] = $this->result_table($this->user->get_events());
+		$data['userevents'] = $this->result_table($this->user->get_events(1));
 		$this->load->view('templates/header', $data);
 		$this->load->view('dashpage', $data);
 		$this->load->view('templates/footer', $data);
@@ -63,6 +63,13 @@ class Home extends CI_Controller {
 		$data['events'] = $this->result_table($this->event->getAll());
 		$this->load->view('templates/header', $data);
 		$this->load->view('eventpage', $data);
+		$this->load->view('templates/footer', $data);
+	}
+
+	public function mapview(){
+		$data['events'] = $this->result_table($this->event->getAll());
+		$this->load->view('templates/header', $data);
+		$this->load->view('mapview', $data);
 		$this->load->view('templates/footer', $data);
 	}
 
