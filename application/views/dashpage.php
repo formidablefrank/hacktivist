@@ -77,6 +77,9 @@
 									<?php echo $event->event_limit; ?>
 									<strong>slots left</strong>
 								</div>
+								<a class="ui right floated button" href="<?php echo base_url('join/'.$user_id.'/'.$event->event_id) ?>">
+									Volunteer
+								</a>
 							</div>
 						</div>
 					</div>
@@ -109,6 +112,9 @@
 									<?php echo $event->event_limit; ?>
 									<strong>slots left</strong>
 								</div>
+								<a class="ui right floated button" href="<?php echo base_url('join/'.$user_id.'/'.$event->event_id) ?>">
+									Volunteer
+								</a>
 							</div>
 						</div>
 					</div>
@@ -141,6 +147,9 @@
 									<?php echo $event->event_limit; ?>
 									<strong>slots left</strong>
 								</div>
+								<a class="ui right floated button" href="<?php echo base_url('join/'.$user_id.'/'.$event->event_id) ?>">
+									Volunteer
+								</a>
 							</div>
 						</div>
 					</div>

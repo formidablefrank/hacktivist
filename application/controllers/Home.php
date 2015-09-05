@@ -75,7 +75,7 @@ class Home extends CI_Controller {
 
 	public function join($userid, $eventid){
 		$data['title'] = 'Leaflet | View Event';
-		$this->eventuser->create($userid, $eventid, 1);
+		// $this->eventuser->create($userid, $eventid, 1);
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/main-nav', $data);
 		$this->load->view('joinpage', $data);
