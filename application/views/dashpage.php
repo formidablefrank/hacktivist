@@ -10,11 +10,11 @@
 					<div class="meta">Volunteer</div>
 					<div class="description">
 						<div class="ui label">
-							<strong><i class="star icon"></i> #</strong>
+							<strong><i class="star icon"></i> #3rd</strong>
 							rank
 						</div>
 						<div class="ui label">
-							<strong><i class="certificate icon"></i> x</strong>
+							<strong><i class="certificate icon"></i> 123</strong>
 							tokens
 						</div>
 					</div>
@@ -36,11 +36,11 @@
 					</div>
 					<div class="description">
 						<div class="ui label">
-							<strong><i class="star icon"></i> #</strong>
+							<strong><i class="star icon"></i> 4th</strong>
 							rank
 						</div>
 						<div class="ui label">
-							<strong><i class="certificate icon"></i> x</strong>
+							<strong><i class="certificate icon"></i> 51</strong>
 							tokens
 						</div>
 					</div>
@@ -53,7 +53,7 @@
 		<div class="fourteen wide mobile ten wide tablet ten wide computer column">
 			<!--Featured Events-->
 			<div class="ui segment">
-				<div class="ui green ribbon label">Feature Events</div>
+				<div class="ui green ribbon label">Featured Events</div>
 				<div class="ui divided items">
 					<?php foreach ($userevents as $event) { ?>
 					<div class="item">
@@ -68,7 +68,7 @@
 							<div class="description">
 								<p><?php echo $event->event_details; ?></p>
 								<p>
-									<?php echo date('M d, D H:i a', strtotime($event->event_start)); ?> 
+									<?php echo date('M d, D H:i a', strtotime($event->event_start)); ?>
 									- <?php echo date('M d, D H:i a', strtotime($event->event_end));?>
 								</p>
 							</div>
@@ -77,9 +77,6 @@
 									<?php echo $event->event_limit; ?>
 									<strong>slots left</strong>
 								</div>
-								<a class="ui right floated button" href="<?php echo base_url('join/'.$user_id.'/'.$event->event_id) ?>">
-									Volunteer
-								</a>
 							</div>
 						</div>
 					</div>
@@ -88,7 +85,7 @@
 			</div>
 		<!--Past Events-->
 			<div class="ui segment">
-				<div class="ui green ribbon label">Upcoming Events You Previously Joined</div>
+				<div class="ui green ribbon label">Upcoming Events You Joined</div>
 				<div class="ui divided items">
 					<?php foreach ($userevents as $event) { ?>
 					<div class="item">
@@ -103,7 +100,7 @@
 							<div class="description">
 								<p><?php echo $event->event_details; ?></p>
 								<p>
-									<?php echo date('M d, D H:i a', strtotime($event->event_start)); ?> 
+									<?php echo date('M d, D H:i a', strtotime($event->event_start)); ?>
 									- <?php echo date('M d, D H:i a', strtotime($event->event_end));?>
 								</p>
 							</div>
@@ -112,9 +109,6 @@
 									<?php echo $event->event_limit; ?>
 									<strong>slots left</strong>
 								</div>
-								<a class="ui right floated button" href="<?php echo base_url('join/'.$user_id.'/'.$event->event_id) ?>">
-									Volunteer
-								</a>
 							</div>
 						</div>
 					</div>
@@ -123,7 +117,7 @@
 			</div>
 			<!--Recent Past Events-->
 			<div class="ui segment">
-				<div class="ui green ribbon label">Recent Finished Events</div>
+				<div class="ui green ribbon label">Recent Events</div>
 				<div class="ui divided items">
 					<?php foreach ($userevents as $event) { ?>
 					<div class="item">
@@ -138,7 +132,7 @@
 							<div class="description">
 								<p><?php echo $event->event_details; ?></p>
 								<p>
-									<?php echo date('M d, D H:i a', strtotime($event->event_start)); ?> 
+									<?php echo date('M d, D H:i a', strtotime($event->event_start)); ?>
 									- <?php echo date('M d, D H:i a', strtotime($event->event_end));?>
 								</p>
 							</div>
@@ -147,9 +141,6 @@
 									<?php echo $event->event_limit; ?>
 									<strong>slots left</strong>
 								</div>
-								<a class="ui right floated button" href="<?php echo base_url('join/'.$user_id.'/'.$event->event_id) ?>">
-									Volunteer
-								</a>
 							</div>
 						</div>
 					</div>

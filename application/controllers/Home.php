@@ -73,6 +73,17 @@ class Home extends CI_Controller {
 		$this->load->view('templates/footer', $data);
 	}
 
+	public function create(){
+		if($this->input->post){
+			$this->event->create();
+		}
+		$data['title'] = 'Leaflet | Create Event';
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/main-nav', $data);
+		$this->load->view('createevent', $data);
+		$this->load->view('templates/footer', $data);
+	}
+
 	public function join($userid, $eventid){
 		$data['title'] = 'Leaflet | View Event';
 		// $this->eventuser->create($userid, $eventid, 1);

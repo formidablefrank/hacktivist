@@ -9,11 +9,14 @@
 		<a href="<?php echo base_url('events') ?>" class="item">
 			Events
 		</a>
+		<a href="<?php echo base_url('mapview') ?>" class="item">
+			Map
+		</a>
 		<div class="right menu">
 			<div class="item">
 				<div class="user panel">
 					<img src="<?php echo base_url('img/forever.png'); ?>" alt="avatar">
-					<span><strong>Surname</strong> Firstname</span>
+						<span><strong>Marian</strong> Andaca</span>
 				</div>
 			</div>
 			<a href="<?php echo base_url('login') ?>" class="item">
