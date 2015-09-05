@@ -9,8 +9,8 @@
 		</div>
 		<?php foreach ($events as $event) { ?>
 			<div class="ui segment">
-			<div class="ui blue ribbon label"><?php echo $event->category_name ?></div>
-			<h3><a href="<?php echo base_url('event/'.$event->event_id) ?>"><?php echo $event->event_name; ?></a></h3>
+			<div class="ui green ribbon label"><?php echo $event->category_name ?></div>
+			<h3><a href="<?php echo base_url('event/'.$event->event_id) ?>" class="header"><?php echo $event->event_name; ?> </a></h3>
 			<h4><?php echo $event->ngo_name; ?></h4>
 			<p><?php echo $event->event_details; ?></p>
 			<p><?php echo date('M d, D H:i a', strtotime($event->event_start)); ?> - <?php echo date('M d, D H:i a', strtotime($event->event_end));?></p>
@@ -67,7 +67,7 @@ $('#queryText').on('input', function(){
         for (var i = results.length - 1; i >= 0; i--) {
           var resultTemplate =
             "<div class='ui result segment'>" +
-              "<span class='ui blue ribbon label'>" + results[i].category_name +"</span>" +
+              "<span class='ui green ribbon label'>" + results[i].category_name +"</span>" +
               "<h3><a href='<?php echo base_url('event/'.$event->event_id) ?>'><?php echo $event->event_name; ?></a></h3>" +
               "<p>" + results[i].faq_answer + "</p>" +
             "</div>";

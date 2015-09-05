@@ -1,5 +1,6 @@
 <section id-"eventpage">
 	<div class="ui centered grid container">
+	
 		<div class="fourteen wide column">
 			<div class="ui segment">
 				<div class="ui items">
