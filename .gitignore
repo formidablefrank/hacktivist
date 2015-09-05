@@ -1,0 +1,4 @@
+*.log
+*~
+*#
+application/config/config.php

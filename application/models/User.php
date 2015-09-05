@@ -19,5 +19,15 @@ class User extends CI_Model{
     function get($userid){
       return $this->db->get_where('users', array('user_id' => $userid), 1);
     }
+
+    function get_tokens($userid){
+        return $query = $this->db->query("SELECT SUM(user_token)
+            FROM event_user WHERE user_id = $userid");
+    }
+
+    function get_events($userid){
+        return $query = $this->db->query("SELECT * 
+            FROM event_user NATURAL JOIN events WHERE user_id = $userid");
+    }
 }
 ?>
