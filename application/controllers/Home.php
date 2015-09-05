@@ -20,9 +20,26 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('templates/header');
-		$this->load->view('homepage');
-		$this->load->view('templates/footer');
+		$data['title'] = 'Welcome!';
+		$this->load->view('templates/header', $data);
+		$this->load->view('homepage', $data);
+		$this->load->view('templates/footer', $data);
+	}
+
+  public function login()
+  {
+		$data['title'] = 'Login!';
+		$this->load->view('templates/header', $data);
+		$this->load->view('loginpage', $data);
+		$this->load->view('templates/footer', $data);
+	}
+
+  public function dash()
+  {
+		$data['title'] = 'Login!';
+		$this->load->view('templates/header', $data);
+		$this->load->view('dashpage', $data);
+		$this->load->view('templates/footer', $data);
 	}
 
 }
