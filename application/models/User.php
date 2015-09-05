@@ -26,8 +26,8 @@ class User extends CI_Model{
     }
 
     function get_events($userid){
-        return $query = $this->db->query("SELECT * 
-            FROM event_user NATURAL JOIN events WHERE user_id = $userid");
+        return $query = $this->db->query("SELECT *
+            FROM event_user NATURAL JOIN events NATURAL JOIN categories NATURAL JOIN ngos NATURAL JOIN statuses WHERE user_id = $userid");
     }
 }
 ?>
