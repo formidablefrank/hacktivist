@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 05, 2015 at 11:32 AM
+-- Generation Time: Sep 05, 2015 at 04:57 PM
 -- Server version: 5.6.26
 -- PHP Version: 5.6.12
 
@@ -55,8 +55,8 @@ CREATE TABLE IF NOT EXISTS `events` (
   `event_start` datetime NOT NULL,
   `event_end` datetime NOT NULL,
   `event_address` text NOT NULL,
-  `event_long` int(11) NOT NULL,
-  `event_lat` int(11) NOT NULL,
+  `event_long` double NOT NULL,
+  `event_lat` double NOT NULL,
   `event_limit` int(11) NOT NULL,
   `status_id` int(11) NOT NULL,
   `event_milestone` text NOT NULL
@@ -67,8 +67,8 @@ CREATE TABLE IF NOT EXISTS `events` (
 --
 
 INSERT INTO `events` (`event_id`, `event_name`, `event_details`, `category_id`, `ngo_id`, `event_tokens`, `event_start`, `event_end`, `event_address`, `event_long`, `event_lat`, `event_limit`, `status_id`, `event_milestone`) VALUES
-(1, 'Be part of the change. Be a DYOSA.', 'Tree planting activity', 1, 1, 1, '2015-09-16 09:30:00', '2015-09-17 10:31:00', 'Engineering Library II, UP Diliman', 121, 14, 30, 2, 'We have planted trees.'),
-(2, 'Yolanda: The Road to Resilience', 'Yolanda recovery is supported by 137 national societies, of which 17 are in-country partners of the Philippine Red Cross. Key sectors include shelter, livelihoods, water and sanitation, health, education and disaster risk reduction. \r\nNow well into its second year, the Typhoon Yolanda operation is one of the largest and most complex ever mounted by the Red Cross and Red Crescent in South East Asia. It is spread across five island groups, mostly in rural areas, where some beneficiaries live in remote and hard-to-access mountainous areas and islands.', 2, 2, 5000, '2015-09-23 13:00:00', '2015-09-18 14:00:00', 'Melchor Hall, UP Diliman', 121, 14, 10000, 1, 'As of August 2105, more than 61,600 homes have been built of a targeted 83,127, putting it well on the way to completion by early 2016. Red Cross homes are designed with extra bracing and secure foundations to withstand strong wind. By encouraging beneficiaries to participate in constructing their home where possible, they doing adopt build back better principles.');
+(1, 'Be part of the change. Be a DYOSA.', 'Tree planting activity', 1, 1, 1, '2015-09-16 09:30:00', '2015-09-17 10:31:00', 'Melchor Hall, UP Diliman', 121.0705253, 14.6562936, 30, 2, 'We have planted trees.'),
+(2, 'Yolanda: The Road to Resilience', 'Yolanda recovery is supported by 137 national societies, of which 17 are in-country partners of the Philippine Red Cross. Key sectors include shelter, livelihoods, water and sanitation, health, education and disaster risk reduction. Now well into its second year, the Typhoon Yolanda operation is one of the largest and most complex ever mounted by the Red Cross and Red Crescent in South East Asia. It is spread across five island groups, mostly in rural areas, where some beneficiaries live in remote and hard-to-access mountainous areas and islands.', 2, 2, 5000, '2015-09-23 13:00:00', '2015-09-18 14:00:00', 'Engineering Library II', 121.0688163, 14.6485482, 10000, 1, 'As of August 2105, more than 61,600 homes have been built of a targeted 83,127, putting it well on the way to completion by early 2016. Red Cross homes are designed with extra bracing and secure foundations to withstand strong wind. By encouraging beneficiaries to participate in constructing their home where possible, they doing adopt build back better principles.');
 
 -- --------------------------------------------------------
 
@@ -160,7 +160,7 @@ INSERT INTO `types` (`type_id`, `type_name`) VALUES
 CREATE TABLE IF NOT EXISTS `users` (
   `user_id` int(11) NOT NULL,
   `user_name` text NOT NULL,
-  `user_phone` int(11) NOT NULL,
+  `user_phone` text NOT NULL,
   `user_address` text NOT NULL,
   `user_email` text NOT NULL,
   `user_fbid` int(11) NOT NULL
@@ -171,8 +171,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`user_id`, `user_name`, `user_phone`, `user_address`, `user_email`, `user_fbid`) VALUES
-(1, 'Marian Daca', 1234567, 'UP Diliman', 'marian@mail.com', 1),
-(2, 'Dyosa Andaca', 7654321, 'University of the Philippines, Diliman', 'dyosa@mail.com', 2);
+(1, 'Marian Daca', '639057297409', 'UP Diliman', 'marian@mail.com', 1),
+(2, 'Dyosa Andaca', '7654321', 'University of the Philippines, Diliman', 'dyosa@mail.com', 2);
 
 --
 -- Indexes for dumped tables
@@ -189,6 +189,12 @@ ALTER TABLE `categories`
 --
 ALTER TABLE `events`
   ADD PRIMARY KEY (`event_id`);
+
+--
+-- Indexes for table `event_user`
+--
+ALTER TABLE `event_user`
+  ADD PRIMARY KEY (`event_id`,`user_id`);
 
 --
 -- Indexes for table `ngos`

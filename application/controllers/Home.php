@@ -18,6 +18,10 @@ class Home extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function __construct(){
+		parent::__construct();
+
+	}
 
 	public function index()
 	{
@@ -49,22 +53,18 @@ class Home extends CI_Controller {
   public function dash()
   {
 		$data['title'] = 'Leaflet | Dash';
-		$data['user_id'] = 1;
-		$data['userevents'] = $this->result_table($this->user->get_events(1));
+		$data['userevents'] =  $this->result_table($this->event->getAll());
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/main-nav', $data);
 		$this->load->view('dashpage', $data);
 		$this->load->view('templates/footer', $data);
 	}
 
-  public function events($param='')
+  public function event($eventid)
   {
-		if($this->input->post() && $param === 'create'){
-			$name = $this->input->post();
-			$result = $this->event->create();
-		}
-		$data['title'] = 'Leaflet | sEvents';
-		$data['events'] = $this->result_table($this->event->getAll());
+		$data['user_id'] = 1;
+		$data['event'] = $this->event->get($eventid);
+		$data['title'] = 'Leaflet | Events';
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/main-nav', $data);
 		$this->load->view('eventpage', $data);
