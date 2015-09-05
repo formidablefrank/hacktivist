@@ -21,7 +21,7 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$data['title'] = 'Welcome!';
+		$data['title'] = 'Home';
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/home-nav', $data);
 		$this->load->view('homepage', $data);
@@ -30,7 +30,7 @@ class Home extends CI_Controller {
 
   public function login()
   {
-		$data['title'] = 'Login!';
+		$data['title'] = 'Login';
 		$this->load->view('templates/header', $data);
 		$this->load->view('loginpage', $data);
 		$this->load->view('templates/footer', $data);
@@ -38,15 +38,16 @@ class Home extends CI_Controller {
 
   public function register()
   {
-		$data['title'] = 'Login!';
+		$data['title'] = 'Register';
 		$this->load->view('templates/header', $data);
+		$this->load->view('templates/main-nav', $data);
 		$this->load->view('registerpage', $data);
 		$this->load->view('templates/footer', $data);
 	}
 
   public function dash()
   {
-		$data['title'] = 'Dash!';
+		$data['title'] = 'Dashboard';
 		$data['userevents'] = $this->result_table($this->user->get_events(1));
 		$this->load->view('templates/header', $data);
 		$this->load->view('dashpage', $data);
@@ -59,7 +60,7 @@ class Home extends CI_Controller {
 			$name = $this->input->post();
 			$result = $this->event->create();
 		}
-		$data['title'] = 'Events!';
+		$data['title'] = 'Events';
 		$data['events'] = $this->result_table($this->event->getAll());
 		$this->load->view('templates/header', $data);
 		$this->load->view('eventpage', $data);

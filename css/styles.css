@@ -6,3 +6,25 @@ section#loginpage {
 	padding-top: 20vh;
 	padding-bottom: 10vh;
 }
+
+/* main header styles */
+
+#main-nav {
+	background-color: #A1D55B;
+}
+
+#main-nav a {
+	color: #293127;
+}
+
+#main-nav a:hover {
+	background: none;
+}
+
+#main-nav .header.item {
+	border-right: none;
+}
+
+#main-nav .item {
+	border-radius: 0px;
+}
