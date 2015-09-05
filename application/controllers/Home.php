@@ -72,18 +72,26 @@ class Home extends CI_Controller {
 		$this->load->view('templates/footer', $data);
 	}
 
+	public function events(){
+		$data['user_id'] = 1;
+		$data['events'] = $this->result_table($this->event->getAll());
+    $this->load->view('templates/header', $data);
+		$this->load->view('eventlistpage', $data);
+    $this->load->view('templates/footer', $data);
+	}
+
 	public function mapview(){
 		$data['title'] = 'Map';
 		$data['events'] = $this->result_table($this->event->getAll());
-        $this->load->view('templates/header', $data);
+    $this->load->view('templates/header', $data);
 		$this->load->view('mapview', $data);
-        $this->load->view('templates/footer', $data);
+    $this->load->view('templates/footer', $data);
 	}
 
 	function result_table($query){
       $table = array();
       foreach ($query->result() as $row) {
-          $table[] = $row;
+        $table[] = $row;
       }
       $query->free_result();
       return $table;
