@@ -7,23 +7,21 @@
 			<div class="content">
 				<div class="header">User</div>
 				<div class="meta">
-					volunteer/organization
+					volunteer
 				</div>
 				<div class="description">
-					x total tokens as of xxxx
+					<div class="ui label">
+						<strong><i class="star icon"></i> #</strong>
+						rank
+					</div>
+					<div class="ui label">
+						<strong><i class="certificate icon"></i> x</strong>
+						tokens
+					</div>
 				</div>
 			</div>
 			<div class="extra content">
-				<div class="ui medium vertical inverted green animated button">
-					<div class="visible content">
-						<i class="circle thin icon"></i>
-						xxx tokens
-					</div>
-					<div class="hidden content">
-						<i class="cart icon"></i>
-						Redeem rewards
-					</div>
-				</div>
+				extra content
 			</div>
 		</div>
 	</div>
