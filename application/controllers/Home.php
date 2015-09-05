@@ -34,11 +34,27 @@ class Home extends CI_Controller {
 		$this->load->view('templates/footer', $data);
 	}
 
-  public function dash()
+  public function register()
   {
 		$data['title'] = 'Login!';
 		$this->load->view('templates/header', $data);
+		$this->load->view('registerpage', $data);
+		$this->load->view('templates/footer', $data);
+	}
+
+  public function dash()
+  {
+		$data['title'] = 'Dash!';
+		$this->load->view('templates/header', $data);
 		$this->load->view('dashpage', $data);
+		$this->load->view('templates/footer', $data);
+	}
+
+  public function events($param='')
+  {
+		$data['title'] = 'Events!';
+		$this->load->view('templates/header', $data);
+		$this->load->view('eventpage', $data);
 		$this->load->view('templates/footer', $data);
 	}
 
