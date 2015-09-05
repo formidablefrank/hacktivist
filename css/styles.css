@@ -1,4 +1,11 @@
 
+/* global styles */
+
+body,
+h1, h2, h3, h4, h5, .ui.button {
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
 /* section wrapper styles */
 
 section#loginpage {
@@ -14,17 +21,24 @@ section#loginpage {
 }
 
 #main-nav a {
+	height: 75px;
 	color: #293127;
+	margin: 0;
+	border-radius: 0px;
+	font-size: 16px;
 }
 
 #main-nav a:hover {
+	background: rgba(0,0,0,0.1);
+}
+
+#main-nav a.header:hover {
 	background: none;
 }
 
 #main-nav .header.item {
+	font-family: "Yanone Kaffeesatz", Roboto, "Helvetica Neue", sans-serif;
 	border-right: none;
-}
-
-#main-nav .item {
-	border-radius: 0px;
+	font-weight: 700;
+	font-size: 24px;
 }
