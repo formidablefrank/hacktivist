@@ -51,20 +51,103 @@
 			</div>
 		</div>
 		<div class="fourteen wide mobile ten wide tablet ten wide computer column">
-			<div class="ui fluid segment">
-				<div class="ui green ribbon label">Featured Events</div>
-				<?php foreach ($userevents as $event) { ?>
-					<div class="ui vertical segment">
-						<h3><?php echo $event->event_name; ?></h3>
-						<h4><?php echo $event->ngo_name; ?></h4>
-						<p><?php echo $event->event_details; ?></p>
-						<p><?php echo date('M d, D H:i a', strtotime($event->event_start)); ?> - <?php echo date('M d, D H:i a', strtotime($event->event_end));?></p>
-						<p><?php echo $event->event_limit; ?> slots left</p>
-						<a href="<?php echo base_url('join/'.$user_id.'/'.$event->event_id) ?>">Join the Event</a>
-						<a href="<?php echo base_url('event/'.$event->event_id) ?>">More details</a>
+			<!--Featured Events-->
+			<div class="ui segment">
+				<div class="ui green ribbon label">Feature Events</div>
+				<div class="ui divided items">
+					<?php foreach ($userevents as $event) { ?>
+					<div class="item">
+						<div class="image">
+							<img src="img/forever.png" alt="Image">
+						</div>
+						<div class="content">
+							<a href="<?php echo base_url('event/'.$event->event_id) ?>" class="header">
+								<?php echo $event->event_name; ?>
+							</a>
+							<div class="meta"><?php echo $event->ngo_name; ?></div>
+							<div class="description">
+								<p><?php echo $event->event_details; ?></p>
+								<p>
+									<?php echo date('M d, D H:i a', strtotime($event->event_start)); ?> 
+									- <?php echo date('M d, D H:i a', strtotime($event->event_end));?>
+								</p>
+							</div>
+							<div class="extra">
+								<div class="ui label">
+									<?php echo $event->event_limit; ?>
+									<strong>slots left</strong>
+								</div>
+							</div>
+						</div>
 					</div>
-				<?php } ?>
+					<?php } ?>
+				</div>
 			</div>
+		<!--Past Events-->
+			<div class="ui segment">
+				<div class="ui green ribbon label">Upcoming Events You Previously Joined</div>
+				<div class="ui divided items">
+					<?php foreach ($userevents as $event) { ?>
+					<div class="item">
+						<div class="image">
+							<img src="img/forever.png" alt="Image">
+						</div>
+						<div class="content">
+							<a href="<?php echo base_url('event/'.$event->event_id) ?>" class="header">
+								<?php echo $event->event_name; ?>
+							</a>
+							<div class="meta"><?php echo $event->ngo_name; ?></div>
+							<div class="description">
+								<p><?php echo $event->event_details; ?></p>
+								<p>
+									<?php echo date('M d, D H:i a', strtotime($event->event_start)); ?> 
+									- <?php echo date('M d, D H:i a', strtotime($event->event_end));?>
+								</p>
+							</div>
+							<div class="extra">
+								<div class="ui label">
+									<?php echo $event->event_limit; ?>
+									<strong>slots left</strong>
+								</div>
+							</div>
+						</div>
+					</div>
+					<?php } ?>
+				</div>
+			</div>
+			<!--Recent Past Events-->
+			<div class="ui segment">
+				<div class="ui green ribbon label">Recent Finished Events</div>
+				<div class="ui divided items">
+					<?php foreach ($userevents as $event) { ?>
+					<div class="item">
+						<div class="image">
+							<img src="img/forever.png" alt="Image">
+						</div>
+						<div class="content">
+							<a href="<?php echo base_url('event/'.$event->event_id) ?>" class="header">
+								<?php echo $event->event_name; ?>
+							</a>
+							<div class="meta"><?php echo $event->ngo_name; ?></div>
+							<div class="description">
+								<p><?php echo $event->event_details; ?></p>
+								<p>
+									<?php echo date('M d, D H:i a', strtotime($event->event_start)); ?> 
+									- <?php echo date('M d, D H:i a', strtotime($event->event_end));?>
+								</p>
+							</div>
+							<div class="extra">
+								<div class="ui label">
+									<?php echo $event->event_limit; ?>
+									<strong>slots left</strong>
+								</div>
+							</div>
+						</div>
+					</div>
+					<?php } ?>
+				</div>
+			</div>
+
 		</div>
 	</div>
 </section>
