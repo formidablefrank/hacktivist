@@ -51,10 +51,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'home';
 $route['dash'] = 'home/dash';
-$route['register'] = 'home/dash';
 $route['login'] = 'home/login';
 $route['register'] = 'home/register';
-$route['event'] = 'home/event';
+$route['event/(:any)'] = 'home/event/$1';
 $route['mapview'] = 'home/mapview';
 $route['events/create'] = 'home/events/create';
 $route['404_override'] = '';

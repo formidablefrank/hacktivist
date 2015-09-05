@@ -3,7 +3,7 @@
 		<div class="ui fluid card">
 			<div class="content">
 				<div class="left floated mini ui image">
-					<img src="img/forever.png" alt="">
+					<img src="<?php echo base_url('img/forever.png') ?>" alt="">
 				</div>
 				<div class="header">User</div>
 				<div class="meta">Volunteer</div>
@@ -26,7 +26,7 @@
 	<div class="four wide tablet four wide computer only column">
 		<div class="ui card">
 			<div class="image">
-				<img src="img/forever.png" alt="">
+				<img src="<?php echo base_url('img/forever.png') ?>" alt="">
 			</div>
 			<div class="content">
 				<div class="header">User</div>

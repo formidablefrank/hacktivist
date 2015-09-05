@@ -53,6 +53,7 @@ class Home extends CI_Controller {
   public function dash()
   {
 		$data['title'] = 'Leaflet | Dash';
+		$data['user_id'] = 1;
 		$data['userevents'] =  $this->result_table($this->event->getAll());
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/main-nav', $data);
