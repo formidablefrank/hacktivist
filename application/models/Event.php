@@ -38,6 +38,17 @@ class Event extends CI_Model{
         'event_milestone' => $milestone),
       array('event_id' => $eventid));
   }
+
+  function get($eventid){
+    return return $this->db->get_where('events', array('event_id' => $eventid), 1);
+  }
+
+  function getAll(){
+    return $query = $this->db->query("SELECT * 
+      FROM events NATURAL JOIN ngos NATURAL JOIN categories
+      NATURAL JOIN statuses");
+  }
+
 }
 
 ?>
