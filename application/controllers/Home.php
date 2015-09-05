@@ -112,6 +112,14 @@ class Home extends CI_Controller {
     $this->load->view('templates/footer', $data);
 	}
 
+	public function leaderboard(){
+		$data['title'] = 'Leaderboard';
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/main-nav', $data);
+		$this->load->view('leaderpage', $data);
+		$this->load->view('templates/footer', $data);
+	}
+
 	function result_table($query){
       $table = array();
       foreach ($query->result() as $row) {

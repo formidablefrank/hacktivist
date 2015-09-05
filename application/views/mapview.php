@@ -5,12 +5,12 @@
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 14.6445454, lng: 121.0756861},
-    zoom: 14
+    zoom: 6
   });
 
   <?php foreach ($events as $event) { ?>
     var infowindow<?php echo $event->event_id; ?> = new google.maps.InfoWindow({
-      content: "<h3><?php echo $event->event_name; ?></h3><h4><?php echo $event->ngo_name; ?></h4><p><?php echo $event->event_details; ?></p><p><?php echo date('M d, l', strtotime($event->event_start)); ?></p><p><?php echo $event->event_address; ?></p><a href='<?php echo base_url('join/'.$user_id.'/'.$event->event_id) ?>'>Join the Event</a>&nbsp;<a href='<?php echo base_url('event/'.$event->event_id) ?>'>More details</a>"
+      content: "<h3><?php echo $event->event_name; ?></h3><h4><?php echo $event->ngo_name; ?></h4><p><?php echo $event->event_details; ?></p><p><?php echo date('M d, l', strtotime($event->event_start)); ?></p><p><?php echo $event->event_address; ?></p><a href='<?php echo base_url('event/'.$event->event_id) ?>' class='ui button'>More details</a>"
     });
     var pinColor = "<?php echo $event->category_color; ?>";
     var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor,

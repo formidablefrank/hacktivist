@@ -12,6 +12,9 @@
 		<a href="<?php echo base_url('mapview') ?>" class="item">
 			Map
 		</a>
+		<a href="<?php echo base_url('leaderboard') ?>" class="item">
+			Leaderboard
+		</a>
 		<div class="right menu">
 			<div class="item">
 				<div class="user panel">

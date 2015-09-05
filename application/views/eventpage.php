@@ -34,6 +34,13 @@
 								class="ui right floated button">
 									Join the Event
 								</a>
+								<br/><br/><br/>
+								<div
+								    class="fb-like"
+								    data-send="true"
+								    data-width="450"
+								    data-show-faces="true">
+								</div>
 							</div>
 						</div>
 					</div>
