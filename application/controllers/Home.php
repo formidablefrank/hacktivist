@@ -31,6 +31,7 @@ class Home extends CI_Controller {
   {
 		$data['title'] = 'Login';
 		$this->load->view('templates/header', $data);
+		$this->load->view('templates/main-nav', $data);
 		$this->load->view('loginpage', $data);
 		$this->load->view('templates/footer', $data);
 	}
@@ -49,6 +50,7 @@ class Home extends CI_Controller {
 		$data['title'] = 'Dashboard';
 		$data['userevents'] = $this->result_table($this->user->get_events(1));
 		$this->load->view('templates/header', $data);
+		$this->load->view('templates/main-nav', $data);
 		$this->load->view('dashpage', $data);
 		$this->load->view('templates/footer', $data);
 	}
@@ -62,6 +64,7 @@ class Home extends CI_Controller {
 		$data['title'] = 'Events';
 		$data['events'] = $this->result_table($this->event->getAll());
 		$this->load->view('templates/header', $data);
+		$this->load->view('templates/main-nav', $data);
 		$this->load->view('eventpage', $data);
 		$this->load->view('templates/footer', $data);
 	}
