@@ -30,4 +30,4 @@
 </div>
 
 <!-- global particle canvas -->
-<canvas id="global-particle-canvas"></canvas>
+<canvas id="global-particle-canvas" class="reverse"></canvas>

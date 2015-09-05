@@ -28,7 +28,11 @@
 
 			context.beginPath();
 			context.arc(p.x, p.y, p.r, 0, 2 * Math.PI, false);
-			context.fillStyle = "rgba(255,255,255,0.7)";
+			if ($("#global-particle-canvas").hasClass("reverse")) {
+				context.fillStyle = "#A1D55B";
+			} else {
+				context.fillStyle = "rgba(255,255,255,0.7)";
+			}
 			context.fill();
 			context.closePath();
 		}
@@ -49,14 +53,22 @@
 					p.x = Math.random() * canvas.width;
 					p.v = Math.random();
 				} else {
-					p.y -= p.v * dst * 4 + p.v;
+					if ($("#global-particle-canvas").hasClass("reverse")) {
+						p.y += p.v * dst * 4 + p.v;
+					} else {
+						p.y -= p.v * dst * 4 + p.v;
+					}
 				}
 
 				context.beginPath();
 				context.arc(p.x, p.y, p.r, 0, 2 * Math.PI, false);
-				context.fillStyle = "rgba(255,255,255,0.7)";
+				if ($("#global-particle-canvas").hasClass("reverse")) {
+					context.fillStyle = "#A1D55B";
+				} else {
+					context.fillStyle = "rgba(255,255,255,0.7)";
+				}
 				context.shadowBlur = 5;
-				context.shadowColor = "#FFFFFF";
+				context.shadowColor = "#A1D55B";
 				context.fill();
 				context.closePath();
 			}
