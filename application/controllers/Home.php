@@ -67,7 +67,7 @@ class Home extends CI_Controller {
 	}
 
 	public function mapview(){
-		header("Header set Access-Control-Allow-Origin *");
+		header("Access-Control-Allow-Origin '*'");
 		$data['title'] = 'Map';
 		$data['events'] = $this->result_table($this->event->getAll());
 		$this->load->view('mapview', $data);
