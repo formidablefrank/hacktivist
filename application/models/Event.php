@@ -6,7 +6,9 @@ class Event extends CI_Model{
   }
 
   function getAll(){
-    return $this->db->get('events');
+    return $query = $this->db->query("SELECT * 
+      FROM events NATURAL JOIN ngos NATURAL JOIN categories
+      NATURAL JOIN statuses");
   }
 
   function create($name, $desc, $categoryid, $ngoid, $tokens, $start, $end, $address, $lat, $lon, $limit, $statusid){
@@ -44,13 +46,7 @@ class Event extends CI_Model{
   }
 
   function get($eventid){
-    return return $this->db->get_where('events', array('event_id' => $eventid), 1);
-  }
-
-  function getAll(){
-    return $query = $this->db->query("SELECT * 
-      FROM events NATURAL JOIN ngos NATURAL JOIN categories
-      NATURAL JOIN statuses");
+    return $this->db->get_where('events', array('event_id' => $eventid), 1);
   }
 
 }
