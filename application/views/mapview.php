@@ -4,8 +4,8 @@
 <script>
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 14.6547158, lng: 121.0649147},
-    zoom: 15
+    center: {lat: 14.6445454, lng: 121.0756861},
+    zoom: 14
   });
 
   <?php foreach ($events as $event) { ?>

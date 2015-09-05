@@ -44,7 +44,7 @@ class Event extends CI_Model{
   }
 
   function get($eventid){
-    return $this->db->query('SELECT * FROM events NATURAL JOIN categories NATURAL JOIN ngos NATURAL JOIN statuses')->row();
+    return $this->db->query("SELECT * FROM events NATURAL JOIN categories NATURAL JOIN ngos NATURAL JOIN statuses WHERE event_id = '$eventid'")->row();
   }
 
 }
