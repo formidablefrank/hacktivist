@@ -4,7 +4,7 @@
     <script type="text/javascript" src="<?php echo base_url('js/semantic.min.js'); ?>"></script>
 
     <!-- load webfonts -->
-    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:700,400,300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700,400" rel="stylesheet" type="text/css">
 </body>
 </html>

@@ -1,7 +1,7 @@
 <div id="main-nav" class="ui fluid container">
 	<div class="ui secondary menu container">
 		<a href="" class="header item">
-			<i class="leaf icon"></i> Leaflet
+			<img src="img/logo-black.svg" alt="app logo">
 		</a>
 		<a href="dash" class="item">
 			Dashboard
@@ -11,14 +11,16 @@
 		</a>
 		<div class="right menu">
 			<div class="item">
-				<img src="img/forever.png" alt="avatar" class="ui spaced avatar image">
-				Firstname Surname
+				<div class="user panel">
+					<img src="img/forever.png" alt="avatar">
+					<span>Firstname Surname</span>
+				</div>
 			</div>
 			<a href="login" class="item">
-				<i class="user icon"></i> Login
+				Login
 			</a>
 			<a href="register" class="item">
-				<i class="add user icon"></i> Register
+				Register
 			</a>
 		</div>
 	</div>
