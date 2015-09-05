@@ -34,7 +34,7 @@ class Home extends CI_Controller {
 
   public function login()
   {
-		$data['title'] = 'Leaflet | Login';
+		$data['title'] = 'Login | Leaflet';
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/main-nav', $data);
 		$this->load->view('loginpage', $data);
@@ -43,7 +43,7 @@ class Home extends CI_Controller {
 
   public function register()
   {
-		$data['title'] = 'Leaflet | Register';
+		$data['title'] = 'Register | Leaflet';
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/main-nav', $data);
 		$this->load->view('registerpage', $data);
@@ -52,6 +52,7 @@ class Home extends CI_Controller {
 
   public function dash()
   {
+		$data['title'] = 'Dashboard | Leaflet';
 		$data['user_id'] = 1;
 		$data['title'] = 'Leaflet | Dash';
 		$data['userevents'] =  $this->result_table($this->event->getAll());
@@ -83,9 +84,10 @@ class Home extends CI_Controller {
 
 	public function events(){
 		$data['user_id'] = 1;
-		$data['title'] = 'Leaflet | Events';
+		$data['title'] = 'Events | Leaflet';
 		$data['events'] = $this->result_table($this->event->getAll());
     $this->load->view('templates/header', $data);
+		$this->load->view('templates/main-nav', $data);
 		$this->load->view('eventlistpage', $data);
     $this->load->view('templates/footer', $data);
 	}

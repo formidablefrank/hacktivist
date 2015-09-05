@@ -13,7 +13,7 @@
 			<div class="item">
 				<div class="user panel">
 					<img src="<?php echo base_url('img/forever.png'); ?>" alt="avatar">
-					<span>Firstname Surname</span>
+					<span><strong>Surname</strong> Firstname</span>
 				</div>
 			</div>
 			<a href="<?php echo base_url('login') ?>" class="item">
