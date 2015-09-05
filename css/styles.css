@@ -54,14 +54,28 @@ section#registerpage {
 	font-family: "Roboto Condensed", Roboto, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
-}
-
-#main-nav a:hover {
-	background: rgba(0,0,0,0.05);
-}
-
-#main-nav a.header:hover {
+	position: relative;
 	background: none;
+}
+
+#main-nav a:not(.header):after {
+	content: "⚫";
+	font-size: 6px;
+	position: absolute;
+	top: 20px;
+	transform: translateX(-50%);
+	left: 50%;
+	color: rgba(0,0,0,0.5);
+	-webkit-transition: all 0.25s;
+	-o-transition: all 0.25s;
+	transition: all 0.25s;
+	text-shadow: 0px 0px 0px rgba(0,0,0,0), 0px 0px 0px rgba(0,0,0,0);
+	opacity: 0;
+}
+
+#main-nav a:not(.header):hover:after {
+	text-shadow: -8px 0px 0px rgba(0,0,0,0.5), 8px 0px 0px rgba(0,0,0,0.5);
+	opacity: 1;
 }
 
 #main-nav .header.item {
