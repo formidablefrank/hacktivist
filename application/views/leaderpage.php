@@ -1,5 +1,8 @@
 <section id-"eventpage">
 	<div class="ui centered grid container">
+    <div class="ui text container">
+      <div class="ui header"><i class="trophy icon"></i> Leaderboard</div>
+    </div>
 		<div class="fourteen wide column">
 			<div class="ui segment">
 				<div class="ui items">
