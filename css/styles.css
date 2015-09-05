@@ -1,6 +1,10 @@
 
 /* global styles */
 
+body {
+	background: #F8FEE9;
+}
+
 body,
 h1, h2, h3, h4, h5, .ui.button {
 	font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -18,6 +22,12 @@ section#registerpage {
 	min-height: 100vh;
 	padding-top: 10vh;
 	padding-bottom: 10vh;
+}
+
+section#dashpage {
+	min-height: 100vh;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 /* main header styles */
