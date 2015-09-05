@@ -65,7 +65,7 @@ class Home extends CI_Controller {
   {
 		$data['user_id'] = 1;
 		$data['event'] = $this->event->get($eventid);
-		$data['title'] = 'Leaflet | Events';
+		$data['title'] = 'Leaflet | View Event';
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/main-nav', $data);
 		$this->load->view('eventpage', $data);
@@ -74,6 +74,7 @@ class Home extends CI_Controller {
 
 	public function events(){
 		$data['user_id'] = 1;
+		$data['title'] = 'Leaflet | Events';
 		$data['events'] = $this->result_table($this->event->getAll());
     $this->load->view('templates/header', $data);
 		$this->load->view('eventlistpage', $data);
