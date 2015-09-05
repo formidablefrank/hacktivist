@@ -18,9 +18,10 @@ class Home extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+
 	public function index()
 	{
-		$data['title'] = 'Home';
+		$data['title'] = 'Leaflet';
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/home-nav', $data);
 		$this->load->view('homepage', $data);
@@ -29,7 +30,7 @@ class Home extends CI_Controller {
 
   public function login()
   {
-		$data['title'] = 'Login';
+		$data['title'] = 'Leaflet | Login';
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/main-nav', $data);
 		$this->load->view('loginpage', $data);
@@ -38,7 +39,7 @@ class Home extends CI_Controller {
 
   public function register()
   {
-		$data['title'] = 'Register';
+		$data['title'] = 'Leaflet | Register';
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/main-nav', $data);
 		$this->load->view('registerpage', $data);
@@ -47,7 +48,7 @@ class Home extends CI_Controller {
 
   public function dash()
   {
-		$data['title'] = 'Dashboard';
+		$data['title'] = 'Leaflet | Dash';
 		$data['userevents'] = $this->result_table($this->user->get_events(1));
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/main-nav', $data);
@@ -61,7 +62,7 @@ class Home extends CI_Controller {
 			$name = $this->input->post();
 			$result = $this->event->create();
 		}
-		$data['title'] = 'Events';
+		$data['title'] = 'Leaflet | sEvents';
 		$data['events'] = $this->result_table($this->event->getAll());
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/main-nav', $data);
@@ -70,10 +71,11 @@ class Home extends CI_Controller {
 	}
 
 	public function mapview(){
+		$data['title'] = 'Map';
 		$data['events'] = $this->result_table($this->event->getAll());
-		$this->load->view('templates/header', $data);
+        $this->load->view('templates/header', $data);
 		$this->load->view('mapview', $data);
-		$this->load->view('templates/footer', $data);
+        $this->load->view('templates/footer', $data);
 	}
 
 	function result_table($query){
