@@ -108,6 +108,7 @@ class Home extends CI_Controller {
 		$data['title'] = 'Map';
 		$data['events'] = $this->result_table($this->event->getAll());
     $this->load->view('templates/header', $data);
+     $this->load->view('templates/main-nav', $data);
 		$this->load->view('mapview', $data);
     $this->load->view('templates/footer', $data);
 	}

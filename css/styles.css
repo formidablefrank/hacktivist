@@ -21,6 +21,16 @@ body {
 	z-index: -50;
 }
 
+#main-particle-canvas {
+	background: rgba(255,255,255,0.87);
+	/*background: linear-gradient(to bottom, #A1D55B, #E1FF9B);*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -50;
+}
 /* section wrapper styles */
 
 section {

@@ -25,3 +25,5 @@
 		</div>
 	</div>
 </div>
+
+<canvas id="global-particle-canvas"></canvas>
