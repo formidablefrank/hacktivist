@@ -1,4 +1,11 @@
 
+/* global styles */
+
+body,
+h1, h2, h3, h4, h5, .ui.button {
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
 /* section wrapper styles */
 
 section#loginpage {
@@ -14,10 +21,20 @@ section#loginpage {
 }
 
 #main-nav a {
-	color: #293127;
+	height: 75px;
+	color: rgba(0,0,0,0.5);
+	margin: 0;
+	border-radius: 0px;
+	font-family: "Roboto Condensed", Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
 }
 
 #main-nav a:hover {
+	background: rgba(0,0,0,0.05);
+}
+
+#main-nav a.header:hover {
 	background: none;
 }
 
@@ -25,8 +42,35 @@ section#loginpage {
 	border-right: none;
 }
 
-#main-nav .item {
-	border-radius: 0px;
+#main-nav .header.item img {
+	height: 24px;
+	width: auto;
+	opacity: 0.5;
+}
+
+#main-nav .user.panel {
+	font-family: "Roboto Condensed", Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.1);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#main-nav .user.panel img,
+#main-nav .user.panel span {
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 24px;
+	height: 24px;
+	width: auto;
+}
+
+#main-nav .user.panel img {
+	border-radius: 50%;
+	margin-right: 5px;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1);
 }
 
 #map {

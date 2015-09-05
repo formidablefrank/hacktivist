@@ -1,8 +1,7 @@
-<div id="main-nav" class="ui fluid container">
+<div id="main-nav">
 	<div class="ui secondary menu container">
 		<a href="" class="header item">
-			<i class="leaf icon"></i>
-			TITLE
+			<img src="img/logo-black.svg" alt="app logo">
 		</a>
 		<a href="dash" class="item">
 			Dashboard
@@ -11,15 +10,16 @@
 			Events
 		</a>
 		<div class="right menu">
-			<a class="item">
-				<img src="img/forever.png" alt="avatar" class="ui avatar image">
-				User
-			</a>
+			<div class="item">
+				<div class="user panel">
+					<img src="img/forever.png" alt="avatar">
+					<span>Firstname Surname</span>
+				</div>
+			</div>
 			<a href="login" class="item">
-				<i class="user icon"></i>
-					Login</a>
+				Login
+			</a>
 			<a href="register" class="item">
-				<i class="add user icon"></i>
 				Register
 			</a>
 		</div>
