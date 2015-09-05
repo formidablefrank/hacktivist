@@ -1,5 +1,5 @@
-<div class="ui grid container">
-	<div class="fourteen wide mobile six wide tablet four wide computer column">
+<div class="ui centered grid container">
+	<div class="fourteen wide mobile four wide tablet four wide computer column">
 		<div class="ui card">
 			<div class="image">
 				<img src="img/forever.png" alt="">
@@ -14,12 +14,25 @@
 				</div>
 			</div>
 			<div class="extra content">
-				<a href=""><i class="certificate icon"></i>
-					x tokens</a>
+				<div class="ui medium vertical inverted green animated button">
+					<div class="visible content">
+						<i class="circle thin icon"></i>
+						xxx tokens
+					</div>
+					<div class="hidden content">
+						<i class="cart icon"></i>
+						Redeem rewards
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="fourteen wide mobile eight wide tablet ten wide computer column">
-		<div class="ui fluid segment"></div>
+	<div class="fourteen wide mobile ten wide tablet ten wide computer column">
+		<div class="ui fluid segment">
+			<div class="ui huge green ribbon label">Featured Events</div>
+			<div class="ui vertical segment">content</div>
+			<div class="ui vertical segment">content</div>
+			<div class="ui vertical segment">content</div>
+		</div>
 	</div>
 </div>
