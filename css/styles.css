@@ -6,10 +6,24 @@ h1, h2, h3, h4, h5, .ui.button {
 	font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+body {
+	z-index: -100;
+}
+
+#global-particle-canvas {
+	background: #A1D55B;
+	background: linear-gradient(to bottom, #A1D55B, #E1FF9B);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -50;
+}
+
 /* section wrapper styles */
 
 section {
-	background: #E3F2CE;
 	min-height: 100vh;
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -28,7 +42,8 @@ section#registerpage {
 /* main header styles */
 
 #main-nav {
-	background-color: #A1D55B;
+	background: #A1D55B;
+	background: linear-gradient(to bottom, #A1D55B 50%, transparent);
 }
 
 #main-nav a {
