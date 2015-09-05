@@ -16,7 +16,7 @@
 				Marian Daca
 			</a>
 			<a href="<?php echo base_url('login') ?>" class="item">
-				<i class="user icon"></i>
+				<i class="sign in icon"></i>
 					Login</a>
 			<a href="<?php echo base_url('register') ?>" class="item">
 				<i class="add user icon"></i>
