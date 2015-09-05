@@ -1,4 +1,4 @@
-<div id="main-nav" class="ui fluid container">
+<div id="main-nav">
 	<div class="ui secondary menu container">
 		<a href="" class="header item">
 			<i class="leaf icon"></i>

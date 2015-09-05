@@ -50,6 +50,7 @@ class Home extends CI_Controller {
 		$data['title'] = 'Dashboard';
 		$data['userevents'] = $this->result_table($this->user->get_events(1));
 		$this->load->view('templates/header', $data);
+		$this->load->view('templates/main-nav', $data);
 		$this->load->view('dashpage', $data);
 		$this->load->view('templates/footer', $data);
 	}
