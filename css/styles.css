@@ -87,3 +87,18 @@ section#registerpage {
 #map {
     height: 100%;
 }
+
+.ui.segment	{
+	background: rgba(255,255,255,0.5);
+}
+
+img {
+	opacity: 0.85;
+	-webkit-transition: opacity 0.77s;
+	-o-transition: opacity 0.77s;
+	transition: opacity 0.77s;
+}
+
+img:hover {
+	opacity: 1;
+}
