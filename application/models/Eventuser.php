@@ -15,8 +15,8 @@ class Eventuser extends CI_Model{
         'type_id' => $typeid));
   }
 
-  function update(){
-
+  function update($eventid, $userid, $typeid, $award){
+    
   }
 }
 ?>
