@@ -5,6 +5,21 @@
 				<div class="left floated mini ui image">
 					<img src="img/forever.png" alt="">
 				</div>
+				<div class="header">User</div>
+				<div class="meta">Volunteer</div>
+				<div class="description">
+					<div class="ui label">
+						<strong><i class="star icon"></i> #</strong>
+						rank
+					</div>
+					<div class="ui label">
+						<strong><i class="certificate icon"></i> x</strong>
+						tokens
+					</div>
+				</div>
+			</div>
+			<div class="extra content">
+				Extra content
 			</div>
 		</div>
 	</div>
@@ -16,7 +31,7 @@
 			<div class="content">
 				<div class="header">User</div>
 				<div class="meta">
-					volunteer
+					Volunteer
 				</div>
 				<div class="description">
 					<div class="ui label">
@@ -30,7 +45,7 @@
 				</div>
 			</div>
 			<div class="extra content">
-				extra content
+				Extra content
 			</div>
 		</div>
 	</div>
