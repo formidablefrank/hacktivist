@@ -69,10 +69,11 @@ class Home extends CI_Controller {
 	}
 
 	public function mapview(){
-		header("Access-Control-Allow-Origin '*'");
 		$data['title'] = 'Map';
 		$data['events'] = $this->result_table($this->event->getAll());
+        $this->load->view('templates/header', $data);
 		$this->load->view('mapview', $data);
+        $this->load->view('templates/footer', $data);
 	}
 
 	function result_table($query){

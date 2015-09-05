@@ -28,3 +28,7 @@ section#loginpage {
 #main-nav .item {
 	border-radius: 0px;
 }
+
+#map {
+    height: 100%;
+}
