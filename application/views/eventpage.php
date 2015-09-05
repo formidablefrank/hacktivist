@@ -5,7 +5,7 @@
 				<div class="ui items">
 					<div class="item">
 						<div class="ui medium image">
-							<img src="<?php echo base_url('img/forever.png') ?>" alt="Main photo">
+							<img src="<?php echo $event->event_pic ?>" alt="Main photo">
 						</div>
 						<div class="content">
 							<div class="header">
@@ -34,7 +34,7 @@
 								class="ui right floated button">
 									Join the Event
 								</a>
-								<br/><br/><br/>
+								<br/><br/>
 								<div
 								    class="fb-like"
 								    data-send="true"
@@ -76,22 +76,22 @@
 					<div class="ui grid">
 						<div class="four wide computer column">
 							<a class="ui circular medium image" href="">
-								<img src="<?php echo base_url('img/forever.png') ?>" alt="">
+								<img src="<?php echo $event->event_pic ?> " alt="">
 							</a>
 						</div>
 						<div class="four wide computer column">
 							<a class="ui circular medium image" href="">
-								<img src="<?php echo base_url('img/forever.png') ?>" alt="">
+								<img src="<?php echo $event->event_pic ?> " alt="">
 							</a>
 						</div>
 						<div class="four wide computer column">
 							<a class="ui circular medium image" href="">
-								<img src="<?php echo base_url('img/forever.png') ?>" alt="">
+								<img src="<?php echo $event->event_pic ?>" alt="">
 							</a>
 						</div>
 						<div class="four wide computer column">
 							<a class="ui circular medium image" href="">
-								<img src="<?php echo base_url('img/forever.png') ?>" alt="">
+								<img src="<?php echo $event->event_pic ?> " alt="">
 							</a>
 						</div>
 						<div class="ui right floated button">View more photos</div>
