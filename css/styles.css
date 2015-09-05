@@ -14,6 +14,12 @@ section#loginpage {
 	padding-bottom: 10vh;
 }
 
+section#registerpage {
+	min-height: 100vh;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+
 /* main header styles */
 
 #main-nav {
