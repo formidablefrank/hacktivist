@@ -3,8 +3,7 @@
 	<script type="text/javascript" src="<?php echo base_url('js/jquery-2.1.4.min.js'); ?>"></script>
 	<script type="text/javascript" src="<?php echo base_url('js/semantic.min.js'); ?>"></script>
 	<script type="text/javascript" src="<?php echo base_url('js/text.js'); ?>"></script>
-	<script type="text/javascript" src="<?php echo base_url('js/fbconnect.js'); ?>"></script>
-
+	<script type="text/javascript" src="<?php echo base_url('js/particles.js'); ?>"></script>
 
 	<!-- load webfonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:700,400,300" rel="stylesheet" type="text/css">
