@@ -1,10 +1,6 @@
 
 /* global styles */
 
-body {
-	background: #E3F2CE;
-}
-
 body,
 h1, h2, h3, h4, h5, .ui.button {
 	font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -12,22 +8,21 @@ h1, h2, h3, h4, h5, .ui.button {
 
 /* section wrapper styles */
 
-section#loginpage {
+section {
+	background: #E3F2CE;
 	min-height: 100vh;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+section#loginpage {
 	padding-top: 20vh;
 	padding-bottom: 10vh;
 }
 
 section#registerpage {
-	min-height: 100vh;
 	padding-top: 10vh;
 	padding-bottom: 10vh;
-}
-
-section#dashpage {
-	min-height: 100vh;
-	padding-top: 25px;
-	padding-bottom: 25px;
 }
 
 /* main header styles */
