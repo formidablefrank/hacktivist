@@ -5,6 +5,10 @@ class Event extends CI_Model{
     parent::__construct();
   }
 
+  function getAll(){
+    return $this->db->get('events');
+  }
+
   function create($name, $desc, $categoryid, $ngoid, $tokens, $start, $end, $address, $lat, $lon, $limit, $statusid){
     return $this->db->insert('events',
       array('event_name' => $name,

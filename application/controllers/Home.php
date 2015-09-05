@@ -45,6 +45,7 @@ class Home extends CI_Controller {
   public function dash()
   {
 		$data['title'] = 'Dash!';
+		$data['userevents'] = $this->result_table($this->user->get_events());
 		$this->load->view('templates/header', $data);
 		$this->load->view('dashpage', $data);
 		$this->load->view('templates/footer', $data);
@@ -52,10 +53,24 @@ class Home extends CI_Controller {
 
   public function events($param='')
   {
+		if($this->input->post() && $param === 'create'){
+			$name = $this->input->post();
+			$result = $this->event->create();
+		}
 		$data['title'] = 'Events!';
+		$data['events'] = $this->result_table($this->event->getAll());
 		$this->load->view('templates/header', $data);
 		$this->load->view('eventpage', $data);
 		$this->load->view('templates/footer', $data);
 	}
+
+	function result_table($query){
+      $table = array();
+      foreach ($query->result() as $row) {
+          $table[] = $row;
+      }
+      $query->free_result();
+      return $table;
+  }
 
 }
