@@ -55,6 +55,7 @@ $route['register'] = 'home/dash';
 $route['login'] = 'home/login';
 $route['register'] = 'home/register';
 $route['events'] = 'home/events';
+$route['mapview'] = 'home/mapview';
 $route['events/create'] = 'home/events/create';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

@@ -24,7 +24,7 @@
 
 						<div class="two fields">
 							<div class="field">
-								<button class="ui fluid facebook icon labeled button">
+								<button class="ui fluid facebook icon labeled button" id="fbLogin">
 									<i class="facebook icon"></i> Sign In with Facebook
 								</button>
 							</div>
