@@ -17,7 +17,7 @@
 							<div class="ui divider"></div>
 							<div class="description">
 								<p>What: <?php echo $event->event_details; ?></p>
-								<p>When: <?php echo date('M d, D h:i a', strtotime($event->event_start)); ?> 
+								<p>When: <?php echo date('M d, D h:i a', strtotime($event->event_start)); ?>
 								- <?php echo date('M d, D h:i a', strtotime($event->event_end));?></p>
 								<p>Where: <?php echo $event->event_address; ?></p>
 							</div>
@@ -30,7 +30,7 @@
 									<i class="users icon"></i>
 									<?php echo $event->event_limit;?> slots
 								</div>
-								<a href="<?php echo base_url('join/'.$user_id.'/'.$event->event_id) ?>" 
+								<a href="<?php echo base_url('join/'.$user_id.'/'.$event->event_id) ?>"
 								class="ui right floated button">
 									Join the Event
 								</a>
@@ -42,11 +42,11 @@
 					<div class="ui centered grid container">
 						<div class="ui statistics">
 							<div class="statistic">
-								<div class="value">22</div>
-								<div class="label">Saves</div>
+								<div class="value">100</div>
+								<div class="label">Trees Planted</div>
 							</div>
 							<div class="statistic">
-								<div class="text value">Three <br>Hundred</div>
+								<div class="text value">Two <br>Hundred</div>
 								<div class="label">Signups</div>
 							</div>
 							<div class="statistic">
@@ -54,14 +54,14 @@
 									<i class="computer icon"></i>3
 								</div>
 								<div class="label">
-									Bootcamps
+									Sessions
 								</div>
 							</div>
 							<div class="statistic">
 								<div class="value">
-									<i class="users icon"></i> 42
+									<i class="users icon"></i> 10
 								</div>
-								<div class="label">Team Members</div>
+								<div class="label">Team Leaders</div>
 							</div>
 						</div>
 					</div>
