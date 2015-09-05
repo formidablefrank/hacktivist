@@ -15,8 +15,11 @@ class Eventuser extends CI_Model{
         'type_id' => $typeid));
   }
 
-  function update($eventid, $userid, $typeid, $award){
-    
+  function update($eventid, $userid, $typeid, $token){
+    return $this->db->update('event_user',
+      array('user_token' => $token),
+      array('event_id' => $eventid,
+        'user_id' => $userid));
   }
 }
 ?>
