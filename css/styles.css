@@ -1,16 +1,16 @@
 
 /* global styles */
 
-body {
-	background: #E3F2CE;
-}
-
 body,
 h1, h2, h3, h4, h5, .ui.button {
 	font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 /* section wrapper styles */
+
+section {
+	background: #E3F2CE;
+}
 
 section#loginpage {
 	min-height: 100vh;
