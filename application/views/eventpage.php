@@ -4,8 +4,10 @@
 			<div class="ui segment">
 				<div class="ui items">
 					<div class="item">
-						<div class="ui medium image">
-							<img src="<?php echo $event->event_pic ?>" alt="Main photo">
+						<div class="ui container">
+							<div class="ui fluid image">
+								<img src="<?php echo $event->event_pic ?>" alt="Main photo">
+							</div>
 						</div>
 						<div class="content">
 							<div class="header">
@@ -75,22 +77,22 @@
 					<br><div class="ui horizontal divider">Photos</div><br>
 					<div class="ui grid">
 						<div class="four wide computer column">
-							<a class="ui circular medium image" href="">
+							<a class="ui medium image" href="">
 								<img src="<?php echo $event->event_pic ?> " alt="">
 							</a>
 						</div>
 						<div class="four wide computer column">
-							<a class="ui circular medium image" href="">
+							<a class="ui medium image" href="">
 								<img src="<?php echo $event->event_pic ?> " alt="">
 							</a>
 						</div>
 						<div class="four wide computer column">
-							<a class="ui circular medium image" href="">
+							<a class="ui medium image" href="">
 								<img src="<?php echo $event->event_pic ?>" alt="">
 							</a>
 						</div>
 						<div class="four wide computer column">
-							<a class="ui circular medium image" href="">
+							<a class="ui medium image" href="">
 								<img src="<?php echo $event->event_pic ?> " alt="">
 							</a>
 						</div>
