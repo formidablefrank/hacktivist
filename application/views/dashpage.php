@@ -1,5 +1,14 @@
 <div class="ui centered grid container">
-	<div class="fourteen wide mobile four wide tablet four wide computer column">
+	<div class="fourteen wide mobile only column">
+		<div class="ui fluid card">
+			<div class="content">
+				<div class="left floated mini ui image">
+					<img src="img/forever.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="four wide tablet four wide computer only column">
 		<div class="ui card">
 			<div class="image">
 				<img src="img/forever.png" alt="">
@@ -27,7 +36,7 @@
 	</div>
 	<div class="fourteen wide mobile ten wide tablet ten wide computer column">
 		<div class="ui fluid segment">
-			<div class="ui huge green ribbon label">Featured Events</div>
+			<div class="ui green ribbon label">Featured Events</div>
 			<?php foreach ($userevents as $event) { ?>
 				<div class="ui vertical segment">
 					<h3><?php echo $event->event_name; ?></h3>
