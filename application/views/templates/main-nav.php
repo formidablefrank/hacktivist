@@ -9,11 +9,11 @@
 		<a href="<?php echo base_url('events') ?>" class="item">
 			Events
 		</a>
-		<a href="<?php echo base_url('mapview') ?>" class="item">
-			Map
-		</a>
 		<a href="<?php echo base_url('leaderboard') ?>" class="item">
 			Leaderboard
+		</a>
+		<a href="<?php echo base_url('mapview') ?>" class="item">
+			Map
 		</a>
 		<div class="right menu">
 			<div class="item">

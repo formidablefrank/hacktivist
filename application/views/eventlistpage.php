@@ -1,11 +1,25 @@
 <section id="eventlistpage">
-	<div class="ui container">
-		<div id="content-seek" class="ui text container">
-			<!-- search bar to ask a question -->
-			<div class="ui fluid large icon input">
-				<input placeholder="Type keywords here..." type="text" id="queryText">
-				<i class="search icon"></i>
+	<div class="ui centered grid container">
+		<div class="fourteen wide column">
+			<div id="content-seek" class="ui text container">
+				<!-- search bar to ask a question -->
+				<div class="ui fluid large icon input">
+					<input placeholder="Type keywords here..." type="text" id="queryText">
+					<i class="search icon"></i>
+				</div>
 			</div>
+			<br>	
+			
+				<div class="ui grid">
+					<?php foreach ($events as $event) { ?>
+							<div class="ui fluid image container">
+								<a href="<?php> echo base_url('event/' .$event->event_id) ?>">
+									<img src="<?php echo $event->event_pic?>" alt="Event Image">
+								</a>
+							</div>		
+					<?php } ?>
+				</div>
+			
 		</div>
 		<?php foreach ($events as $event) { ?>
 			<div class="ui segment">

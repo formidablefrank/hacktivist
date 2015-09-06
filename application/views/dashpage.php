@@ -62,7 +62,7 @@
 						</div>
 						<div class="content">
 							<a href="<?php echo base_url('event/'.$event->event_id) ?>" class="header">
-								<?php echo $event->event_name; ?> class="ui header"
+								<?php echo $event->event_name; ?>
 							</a>
 							<div class="meta"><?php echo $event->ngo_name; ?></div>
 							<div class="description">
@@ -94,7 +94,7 @@
 						</div>
 						<div class="content">
 							<a href="<?php echo base_url('event/'.$event->event_id) ?>" class="header">
-								<?php echo $event->event_name; ?> class="ui header"
+								<?php echo $event->event_name; ?>
 							</a>
 							<div class="meta"><?php echo $event->ngo_name; ?></div>
 							<div class="description">
@@ -126,7 +126,7 @@
 						</div>
 						<div class="content">
 							<a href="<?php echo base_url('event/'.$event->event_id) ?>" class="header">
-								<?php echo $event->event_name; ?> class="ui header"
+								<?php echo $event->event_name; ?>
 							</a>
 							<div class="meta"><?php echo $event->ngo_name; ?></div>
 							<div class="description">

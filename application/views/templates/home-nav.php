@@ -26,8 +26,7 @@
 				</div>
 			</div>
 			<!--<a href="<?php echo base_url('login') ?>" class="item">
-				Login
-			</a>
+					Login</a>
 			<a href="<?php echo base_url('register') ?>" class="item">
 				Register
 			</a>-->
