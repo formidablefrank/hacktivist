@@ -54,7 +54,7 @@
 					p.v = Math.random();
 				} else {
 					if ($("#global-particle-canvas").hasClass("reverse")) {
-						p.y += p.v * dst * 4 + p.v;
+						p.y += p.v * -dst * 4 + p.v;
 					} else {
 						p.y -= p.v * dst * 4 + p.v;
 					}
