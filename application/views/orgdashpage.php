@@ -3,10 +3,10 @@
         <div class="fourteen wide mobile only column">
             <div class="ui fluid card">
                 <div class="content">
-                    <div class="left floated mini ui image">
+                    <div class="left floated mini ui square image">
                         <img src="<?php echo base_url('img/forever.png') ?>" alt="">
                     </div>
-                    <div class="header">asdf</div>
+                    <div class="header">Eco-friendly</div>
                     <div class="meta">Organization</div>
                     <div class="description">
                         <div class="ui label">
@@ -21,17 +21,17 @@
                     </div>
                 </div>
                 <div class="extra content">
-                    Create event
+                    <a href="<?php echo base_url('create')?>" class="ui button">Create Event</a>
                 </div>
             </div>
         </div>
         <div class="four wide tablet four wide computer only column">
             <div class="ui card">
-                <div class="image">
+                <div class="ui square image">
                     <img src="<?php echo base_url('img/forever.png') ?>" alt="">
                 </div>
                 <div class="content">
-                    <div class="header">asdf</div>
+                    <div class="header">Eco-friendly</div>
                     <div class="meta">Organization</div>
                     <div class="description">
                         <div class="ui label">
@@ -45,7 +45,9 @@
                     </div>
                 </div>
                 <div class="extra content">
-                    Create event
+                    <div class="extra content">
+                        <a href="<?php echo base_url('create')?>" class="ui button">Create Event</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -53,7 +55,7 @@
             <!--Featured Events-->
         <!--Past Events-->
             <div class="ui segment">
-                <div class="ui green ribbon label">Upcoming Events You Joined</div>
+                <div class="ui green ribbon label">Your Upcoming Events</div>
                 <div class="ui divided items">
                     <?php foreach ($userevents as $event) { if($event->status_id == 2){ ?>
                     <div class="item">
@@ -85,7 +87,7 @@
             </div>
             <!--Recent Past Events-->
             <div class="ui segment">
-                <div class="ui green ribbon label">Recent Events</div>
+                <div class="ui green ribbon label">Past Events</div>
                 <div class="ui divided items">
                     <?php foreach ($userevents as $event) { if($event->status_id == 3){?>
                     <div class="item">
