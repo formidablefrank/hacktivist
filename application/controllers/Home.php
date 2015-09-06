@@ -86,9 +86,20 @@ class Home extends CI_Controller {
 	}
 
 	public function create(){
-		if($this->input->post){
-			$this->event->create();
+		if($this->input->post()){
+      $name = $this->input->post('title');
+      $desc = $this->input->post('desc');
+      $date = $this->input->post('date');
+      $limit = $this->input->post('limit');
+      $token = $this->input->post('token');
+      $address = $this->input->post('address');
+      $catid = $this->input->post('category');
+      $lat = $this->input->post('lat');
+      $lon = $this->input->post('lon');
+			$result = $this->event->create($name, $desc, $catid, 1, $token, $date, $date, $address, $lat, $lon, $limit, 2);
+      redirect('/');
 		}
+    $data['categories'] = $this->result_table($this->category->getAll());
 		$data['title'] = 'Leaflet | Create Event';
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/main-nav', $data);

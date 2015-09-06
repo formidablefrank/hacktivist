@@ -6,16 +6,16 @@
 					<div class="left floated mini ui image">
 						<img src="<?php echo base_url('img/forever.png') ?>" alt="">
 					</div>
-					<div class="header">NGO</div>
-					<div class="meta">Organization</div>
+					<div class="header">Marian</div>
+					<div class="meta">Volunteer</div>
 					<div class="description">
 						<div class="ui label">
-							<strong><i class="star icon"></i> Marine Conservation</strong>
+							<strong><i class="star icon"></i> 4th rank</strong>
 							rank
 						</div>
 						<div class="ui label">
-							<strong><i class="certificate icon"></i> 5000</strong>
-							tokens gave
+							<strong><i class="certificate icon"></i> 126</strong>
+							tokens
 						</div>
 					</div>
 				</div>
@@ -36,12 +36,12 @@
 					</div>
 					<div class="description">
 						<div class="ui label">
-							<strong><i class="star icon"></i> Marine Conservation</strong>
+							<strong><i class="star icon"></i> 4th</strong>
 							rank
 						</div>
 						<div class="ui label">
-							<strong><i class="certificate icon"></i> 5000</strong>
-							tokens gave
+							<strong><i class="certificate icon"></i> 126</strong>
+							tokens
 						</div>
 					</div>
 				</div>
