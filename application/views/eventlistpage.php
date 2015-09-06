@@ -8,18 +8,16 @@
 					<i class="search icon"></i>
 				</div>
 			</div>
-			<br>	
-			
-				<div class="ui grid">
-					<?php foreach ($events as $event) { ?>
-							<div class="ui fluid image container">
-								<a href="<?php> echo base_url('event/' .$event->event_id) ?>">
-									<img src="<?php echo $event->event_pic?>" alt="Event Image">
-								</a>
-							</div>		
-					<?php } ?>
-				</div>
-			
+			<br>
+
+			<div class="ui events container">
+				<?php foreach ($events as $event) { ?>
+					<a href="<?php echo base_url('event/' .$event->event_id) ?>">
+						<img src="<?php echo $event->event_pic?>" alt="Event Image">
+					</a>
+				<?php } ?>
+			</div>
+
 		</div>
 		<?php foreach ($events as $event) { ?>
 			<div class="ui segment">

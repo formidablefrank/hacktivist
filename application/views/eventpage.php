@@ -1,14 +1,12 @@
 <section id-"eventpage">
 	<div class="ui centered grid container">
-	
+
 		<div class="fourteen wide column">
 			<div class="ui segment">
 				<div class="ui items">
 					<div class="item">
-						<div class="ui container">
-							<div class="ui fluid image">
-								<img src="<?php echo $event->event_pic ?>" alt="Main photo">
-							</div>
+						<div class="ui large image container">
+							<img src="<?php echo $event->event_pic ?>" alt="Main photo" class="ui fluid image">
 						</div>
 						<div class="content">
 							<div class="header">
