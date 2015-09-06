@@ -213,6 +213,7 @@ main
 	float: left;
 	overflow: hidden;
 	text-align: center;
+	position: relative;
 }
 
 .ui.events.container a img {
@@ -220,4 +221,37 @@ main
 	min-height: 100%;
 	margin: 0;
 	padding: 0;
+}
+
+.ui.events.container .overlay {
+	background: rgba(0,0,0,0.5);
+	color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	display: flex;
+	flex: 1;
+	padding: 1rem;
+	align-items: flex-end;
+	-webkit-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+.ui.events.container a:hover .overlay {
+	opacity: 1;
+}
+
+.ui.events.container a img {
+	filter: blur(0px);
+	-webkit-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+.ui.events.container a:hover img {
+	filter: blur(5px);
 }

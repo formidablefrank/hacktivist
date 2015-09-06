@@ -13,7 +13,10 @@
 			<div class="ui events container">
 				<?php foreach ($events as $event) { ?>
 					<a href="<?php echo base_url('event/' .$event->event_id) ?>">
-						<img src="<?php echo $event->event_pic?>" alt="Event Image">
+						<img src="<?php echo $event->event_pic ?>" alt="Event Image">
+						<div class="overlay">
+							<h2><?php echo $event->event_name; ?></h2>
+						</div>
 					</a>
 				<?php } ?>
 			</div>
