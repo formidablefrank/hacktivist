@@ -22,12 +22,12 @@
 						<span><strong>Marian</strong> Andaca</span>
 				</div>
 			</div>
-			<a href="<?php echo base_url('login') ?>" class="item">
+			<!--<a href="<?php echo base_url('login') ?>" class="item">
 				Login
 			</a>
 			<a href="<?php echo base_url('register') ?>" class="item">
 				Register
-			</a>
+			</a>-->
 		</div>
 	</div>
 </div>
