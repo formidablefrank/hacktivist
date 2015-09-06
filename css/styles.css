@@ -181,3 +181,6 @@ main
 
 /*homepage styles*/
 
+#main-page .ui.text.container {
+	font-size: 2rem;
+}

@@ -1,7 +1,7 @@
-<div id="home-nav" class="ui fluid container">
+<div id="main-nav">
 	<div class="ui secondary menu container">
 		<a href="<?php echo base_url('') ?>" class="header item">
-			<img src="<?php echo base_url('/img/logo-black.svg') ?>" alt="">
+			<img src="<?php echo base_url('img/logo-black.svg'); ?>" alt="app logo">
 		</a>
 		<a href="<?php echo base_url('dash') ?>" class="item">
 			Dashboard
@@ -9,20 +9,32 @@
 		<a href="<?php echo base_url('events') ?>" class="item">
 			Events
 		</a>
+		<a href="<?php echo base_url('mapview') ?>" class="item">
+			Map
+		</a>
+		<a href="<?php echo base_url('leaderboard') ?>" class="item">
+			Leaderboard
+		</a>
 		<div class="right menu">
-			<a class="item">
-				<img src="<?php echo base_url('img/forever.png') ?>" alt="avatar" class="ui avatar image">
-				Marian Daca
-			</a>
+			<div class="item">
+				<div class="user panel">
+					<img src="<?php echo base_url('img/forever.png'); ?>" alt="avatar">
+						<span>
+							<strong>Marian</strong> Andaca
+							&nbsp;&nbsp;&nbsp;<i class="sign out icon"></i>
+						</span>
+				</div>
+			</div>
 			<!--<a href="<?php echo base_url('login') ?>" class="item">
-				<i class="user icon"></i>
-					Login</a>
+				Login
+			</a>
 			<a href="<?php echo base_url('register') ?>" class="item">
-				<i class="add user icon"></i>
 				Register
 			</a>-->
 		</div>
 	</div>
 </div>
+
+<!-- global particle canvas -->
 
 <canvas id="global-particle-canvas"></canvas>
