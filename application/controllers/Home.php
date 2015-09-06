@@ -52,15 +52,27 @@ class Home extends CI_Controller {
 
   public function dash()
   {
-		$data['title'] = 'Dashboard | Leaflet';
-		$data['user_id'] = 1;
-		$data['title'] = 'Leaflet | Dash';
-		$data['userevents'] =  $this->result_table($this->event->getAll());
-		$this->load->view('templates/header', $data);
-		$this->load->view('templates/main-nav', $data);
-		$this->load->view('dashpage', $data);
-		$this->load->view('templates/footer', $data);
-	}
+    $data['title'] = 'Dashboard | Leaflet';
+    $data['user_id'] = 1;
+    $data['title'] = 'Leaflet | Dash';
+    $data['userevents'] =  $this->result_table($this->event->getAll());
+    $this->load->view('templates/header', $data);
+    $this->load->view('templates/main-nav', $data);
+    $this->load->view('dashpage', $data);
+    $this->load->view('templates/footer', $data);
+  }
+
+  public function org()
+  {
+    $data['title'] = 'Dashboard | Leaflet';
+    $data['title'] = 'Leaflet | Org Dash';
+    $data['userevents'] =  $this->result_table($this->ngo->get_events(1));
+    $data['ngo'] =  $this->result_table($this->ngo->get(1));
+    $this->load->view('templates/header', $data);
+    $this->load->view('templates/main-nav', $data);
+    $this->load->view('orgdashpage', $data);
+    $this->load->view('templates/footer', $data);
+  }
 
   public function event($eventid)
   {
