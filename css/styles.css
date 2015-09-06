@@ -174,7 +174,29 @@ a.header{
 a.header:hover {
 	color: #A1E55D !important;
 }
-
+main
 .ui.button {
 	color: #222222;
+}
+
+/*homepage styles*/
+
+#homepage section {
+	min-height: 90vh;
+	height: 90vh;
+}
+
+#homepage section:first-child {
+	min-height: 100vh;
+	height: 100vh;
+}
+
+#homepage section.alt {
+	background: #FFFFFF;
+}
+
+#homepage section:first-child img {
+	width: 50vw;
+	height: auto;
+	margin-top: 10vh;
 }

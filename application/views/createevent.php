@@ -1,1 +1,5 @@
-yayayayaya creat event yeaaaa
+<section id="create-event">
+	<div class="ui centered grid container">
+		
+	</div>
+</section>

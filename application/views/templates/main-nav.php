@@ -19,17 +19,18 @@
 			<div class="item">
 				<div class="user panel">
 					<img src="<?php echo base_url('img/forever.png'); ?>" alt="avatar">
-						<span><strong>Marian</strong> Andaca</span>
+						<span>
+							<strong>Marian</strong> Andaca
+							&nbsp;&nbsp;&nbsp;<i class="sign out icon"></i>
+						</span>
 				</div>
 			</div>
-			<a href="<?php echo base_url('login') ?>" class="item">
-				<i class="sign in icon"></i>
+			<!--<a href="<?php echo base_url('login') ?>" class="item">
 				Login
 			</a>
 			<a href="<?php echo base_url('register') ?>" class="item">
-				<i class="add user icon"></i>
 				Register
-			</a>
+			</a>-->
 		</div>
 	</div>
 </div>
