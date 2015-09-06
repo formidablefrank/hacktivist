@@ -40,7 +40,8 @@
 		function loop() {
 			context.clearRect(0, 0, canvas.width, canvas.height);
 
-			var dst = document.documentElement.scrollTop - st;
+			var dst = $(document).scrollTop() - st;
+			console.log(dst);
 			for(var i = 0; i < particles.length; i++) {
 				var p = particles[i];
 
@@ -73,11 +74,11 @@
 				context.closePath();
 			}
 
-			st = document.documentElement.scrollTop;
+			st = $(document).scrollTop();
 			window.requestAnimationFrame(loop);
 		}
 
-		var st = document.documentElement.scrollTop;
+		var st = $(document).scrollTop();
 		loop();
 	});
 })();
