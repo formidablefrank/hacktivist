@@ -69,7 +69,7 @@ class Home extends CI_Controller {
     $data['userevents'] =  $this->result_table($this->ngo->get_events(1));
     $data['ngo'] =  $this->result_table($this->ngo->get(1));
     $this->load->view('templates/header', $data);
-    $this->load->view('templates/main-nav', $data);
+    $this->load->view('templates/main-nav-organizer', $data);
     $this->load->view('orgdashpage', $data);
     $this->load->view('templates/footer', $data);
   }
