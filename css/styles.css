@@ -56,6 +56,18 @@ section#registerpage {
 
 /* main header styles */
 
+#homepage .ui.container {
+	padding-top: 10vh;
+}
+
+#homepage .ui.container h1{
+	font-size: 4rem;
+}
+
+#homepage .ui.container p {
+	font-size: 2rem;
+}
+
 #home-nav {
 	background: #A1D55B;
 	background: linear-gradient(to bottom, #A1D55B 50%, transparent);
